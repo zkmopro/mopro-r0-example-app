@@ -1,0 +1,24 @@
+[package]
+name = "mopro-r0-example-app"
+version = { workspace = true }
+edition = { workspace = true }
+
+[lib]
+crate-type = ["lib", "cdylib", "staticlib"]
+
+# Adapters for different proof systems
+[features]
+default = []
+
+[dependencies]
+mopro-wasm = { git = "https://github.com/zkmopro/mopro.git" }
+mopro-ffi = { git = "https://github.com/zkmopro/mopro.git", features = ["uniffi"] }
+rust-witness = "0.1"
+num-bigint = "0.4.0"
+thiserror = "2.0.12"
+
+risc0-circuit = { workspace = true }
+risc0-zkvm = { workspace = true, features = ["prove", "metal", "unstable"] }
+
+[build-dependencies]
+rust-witness = "0.1"
