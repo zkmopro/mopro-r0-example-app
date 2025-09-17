@@ -2,8 +2,6 @@
 resolver = "2"
 members = ["mopro-r0-example-app", "risc0-circuit"]
 exclude = ["risc0-circuit/guest"]
-# # Add a default run binary for `cargo run` as zk-app/ios
-# default-run = "ios"
 
 [workspace.package]
 version = "0.1.0"
@@ -11,16 +9,8 @@ edition = "2021"
 
 [workspace.dependencies]
 risc0-circuit = { path = "./risc0-circuit" }
-risc0-build = { version = "3.0.3", features = ["docker"] }
+risc0-build = { version = "3.0.3" }
 risc0-zkvm = { version = "3.0.3", default-features = false }
-
-# # Alloy dependencies for risc0-circuit
-# alloy = { version = "0.15", features = ["full"] }
-# alloy-primitives = { version = "1.0", default-features = false, features = ["rlp", "serde", "std"] }
-# alloy-sol-types = { version = "1.0" }
-
-# [workspace.metadata.risc0]
-# methods = ["guest"]
 
 [profile.dev]
 opt-level = 3
