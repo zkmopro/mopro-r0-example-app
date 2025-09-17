@@ -33,7 +33,3 @@ build/
 .flutter-plugins-dependencies
 
 android/app/.cxx
-
-# Large Bindings Files
-mopro_flutter_plugin/ios/MoproBindings.xcframework
-mopro_flutter_plugin/android/src/main/jniLibs
