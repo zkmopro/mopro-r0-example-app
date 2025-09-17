@@ -2,6 +2,10 @@
 
 Minimal Flutter template for RISC0 zkVM proof generation and verification on mobile devices using Mopro.
 
+> [!NOTE]
+> For ECDSA (p256) example, please check https://github.com/moven0831/mopro-r0-ecdsa-app
+
+
 ## Architecture
 
 ```
@@ -15,7 +19,7 @@ Minimal Flutter template for RISC0 zkVM proof generation and verification on mob
 ```
 
 ## App Demo
-Mopro Risc0 Example App demo running live on Pixel 10 Pro. 
+Mopro Risc0 Example App demo running live on Pixel 10 Pro.
 
 <div align="center">
 
