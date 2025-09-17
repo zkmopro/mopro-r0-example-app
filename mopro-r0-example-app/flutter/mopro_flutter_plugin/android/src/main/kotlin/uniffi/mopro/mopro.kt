@@ -3,7 +3,7 @@
 
 @file:Suppress("NAME_SHADOWING")
 
-package uniffi.MoproR0ExampleApp
+package uniffi.mopro
 
 // Common helper code.
 //
