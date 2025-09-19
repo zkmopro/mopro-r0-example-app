@@ -1,0 +1,4 @@
+module mopro_r0_example_appFFI {
+    header "mopro_r0_example_appFFI.h"
+    export *
+}
